@@ -17,13 +17,13 @@
     align-items: center;
     margin-bottom: 30px;
   &__title {
-    @include font{14px, 1.14, 700, 0.03em};
+    @include font(14px, 1.14, 700, 0.03em);
     text-transform: uppercase;
     color: var(--text);
     margin-bottom: 10px;
   }
 &__text {
-  @include font{14px, 1.71, null, 0.03em};
+  @include font(14px, 1.71, null, 0.03em);
     color: var(--main-text);
   }
 }

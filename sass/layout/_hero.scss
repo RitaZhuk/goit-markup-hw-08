@@ -11,7 +11,7 @@
     max-width: 1600px;
     margin: 0 auto;
     &__title-text {
-      @include font{44px, 1.36, 900, 0.06em};
+      @include font(44px, 1.36, 900, 0.06em);
     text-transform: uppercase;
     text-align: center;
     color: var(--white);

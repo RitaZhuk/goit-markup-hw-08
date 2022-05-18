@@ -37,7 +37,7 @@
      position: relative;
      overflow: hidden;
    &__text {
-    @include font{18px, 1.56, 400, 0.03em};
+    @include font(18px, 1.56, 400, 0.03em);
       position: absolute;
       top: 0;
       background: rgba(33, 150, 243, 0.9);
@@ -63,12 +63,12 @@
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
   &__top {
-    @include font{18px, 2, 700, 0.06em};
+    @include font(18px, 2, 700, 0.06em);
     color: var(--text);
     margin-bottom: 4px;
   }
   &__text {
-    @include font{16px, 1.88, null, 0.03em};
+    @include font(16px, 1.88, null, 0.03em);
     color: var(--main-text);
   }
 }
