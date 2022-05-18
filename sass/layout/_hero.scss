@@ -1,0 +1,46 @@
+.hero {
+    background-color: var(--background);
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+    background-image:linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
+    &__title-text {
+      @include font{44px, 1.36, 900, 0.06em};
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    max-width: 696px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }}
+  
+  .mane__btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background-color: var(--accent);
+    cursor: pointer;
+    min-width: 200px;
+   height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+    color: var(--accent);
+  }
+  }
+  

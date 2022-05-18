@@ -1,0 +1,30 @@
+.peculiar-list {
+    display: flex;
+  &__item {
+    width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }}
+}
+  
+  .peculiar-group {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  &__title {
+    @include font{14px, 1.14, 700, 0.03em};
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+&__text {
+  @include font{14px, 1.71, null, 0.03em};
+    color: var(--main-text);
+  }
+}
+  

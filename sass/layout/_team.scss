@@ -1,0 +1,80 @@
+.team {
+    background-color: var(--background-team);
+  &__title {
+    @include font{36px, 1.17, 700, 0.03em};
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 50px;
+  }}
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  &__item:not(:last-child) {
+    flex-basis: calc(100%/4 - 30px);
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; 
+  }
+&__item {
+    flex-basis: calc(100%/4 - 30px);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+  
+  .team-group {
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+  &__title {
+    @include font{16px, 1.19, 500, 0.03em};
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+&__text {
+  @include font{16px, 1.19, null, 0.03em};
+    text-align: center;
+    color: var(--main-text);
+    margin-bottom: 16px;
+  }
+}
+  
+  .team-group-list {
+    display: flex;
+    justify-content: center;
+  &__item + &__item {
+    margin-left: 10px;
+  }}
+  
+  .team-group-link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+      background-color: var(--accent);
+  }
+  }
+  
+  .team-group-link__icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .team-group-link:hover & {
+    fill: var(--white);
+  }
+  
+  .team-group-link:focus & {
+    fill: var(--white);
+  }}
