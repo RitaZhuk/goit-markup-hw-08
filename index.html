@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- ---Шапка сайта----- -->
-    <!-- <header class="site">
+    <header class="site">
         <div class="conteiner">
         <a href="" class="logo site__logo link"><span class="site__logo-web">Web</span><span class="site__logo-studio">Studio</span></a>
         <nav class="navigation"> 
@@ -40,7 +40,7 @@
                     </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
-        </header> -->
+        </header>
         <!-- main -->
     <main class="main">
         <section class="hero">
@@ -98,13 +98,34 @@
             <div class="conteiner">
             <h2 class="activity__title">Чем мы занимаемся</h2>
             <ul class="activity-list list">
-                <li class="activity-list__item"><img src="./images/we-doing-1.jpg" alt="фото 1" width="370" class="activity-list__image">
+                <li class="activity-list__item">
+                    <img 
+                    srcset="./images/we-doing-1.jpg 1x,
+                    ./images/we-doing-1-1x.jpg 2x"
+                    src="./images/we-doing-1.jpg" 
+                    alt="фото 1" 
+                    width="370" 
+                    class="activity-list__image">
                 <p class="activity-list__title">Десктопные приложения</p>
                 </li>
-                <li class="activity-list__item"><img src="./images/we-doing-2.jpg" alt="фото 2" width="370" class="activity-list__image">
+                <li class="activity-list__item">
+                    <img 
+                    srcset="./images/we-doing-2.jpg 1x,
+                    ./images/we-doing-2-2x.jpg 2x"
+                    src="./images/we-doing-2.jpg" 
+                    alt="фото 2"
+                    width="370" 
+                    class="activity-list__image">
                 <p class="activity-list__title">Мобильные приложения</p>
                 </li>
-                <li class="activity-list__item"><img src="./images/we-doing-3.jpg" alt="фото 3" width="370" class="activity-list__image">
+                <li class="activity-list__item">
+                    <img 
+                    srcset="./images/we-doing-3.jpg 1x,
+                    ./images/we-doing-3-2x.jpg 2x"
+                    src="./images/we-doing-3.jpg" 
+                    alt="фото 3" 
+                    width="370" 
+                    class="activity-list__image">
                 <p class="activity-list__title">Дизайнерские решения</p>
                 </li>
             </ul>
@@ -115,7 +136,24 @@
             <div class="conteiner">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team-list list">
-                <li class="team-list__item"><img src="./images/comand1.jpg" alt="фото 1" width="100%" class="team-image">
+                <li class="team-list__item">
+                    <picture>
+                        <source srcset="./images/comand1.jpg 1x,
+                        ./images/comand1-2x.jpg 2x"
+                        media="(min-width:1200px)">
+                        <source srcset="./images/comand1tab.jpg 1x,
+                        ./images/comand1tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source srcset="./images/comand1mob.jpg 1x,
+                        ./images/comand1mob-2x.jpg 2x"
+                        media="(min-width:320px)">
+                    <img 
+                    src="./images/comand1.jpg" 
+                    alt="фото 1" 
+                    width="100%" 
+                    class="team-image">
+                </picture>
+                    
                      <div class="team-group">
                          <h3 class="team-group__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-group__text">Product Designer</p>
@@ -153,7 +191,24 @@
             
             </li>
                
-                <li class="team-list__item"><img src="./images/comand2.jpg" alt="фото 2" width="100%" class="team-image">
+                <li class="team-list__item">
+                    <picture>
+                        <source srcset="./images/comand2.jpg 1x,
+                        ./images/comand2-2x.jpg 2x"
+                        media="(min-width:1200px)">
+                        <source srcset="./images/comand2tab.jpg 1x,
+                        ./images/comand2tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source srcset="./images/comand2mob.jpg 1x,
+                        ./images/comand2mob-2x.jpg 2x"
+                        media="(min-width:320px)">
+                    <img 
+                    src="./images/comand1.jpg" 
+                    alt="фото 2" 
+                    width="100%" 
+                    class="team-image">
+                </picture>
+                    
                        <div class="team-group">
                            <h3 class="team-group__title">Ольга Репина</h3>
                 <p lang="en" class="team-group__text">Frontend Developer</p>
@@ -190,7 +245,24 @@
             </div>
             </li>
              
-                <li class="team-list__item"><img src="./images/comand3.jpg" alt="фото 3" width="100%" class="team-image">
+                <li class="team-list__item">
+                    <picture>
+                        <source srcset="./images/comand3.jpg 1x,
+                        ./images/comand3-2x.jpg 2x"
+                        media="(min-width:1200px)">
+                        <source srcset="./images/comand3tab.jpg 1x,
+                        ./images/comand3tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source srcset="./images/comand3mob.jpg 1x,
+                        ./images/comand3mob-2x.jpg 2x"
+                        media="(min-width:320px)">
+                    <img 
+                    src="./images/comand3.jpg" 
+                    alt="фото 3" 
+                    width="100%" 
+                    class="team-image">
+                </picture>
+                    
                     <div class="team-group">
                         <h3 class="team-group__title">Николай Тарасов</h3>
                 <p lang="en" class="team-group__text">Marketing</p>
@@ -227,7 +299,23 @@
             </div>
             </li>
                 
-                <li class="team-list__item"><img src="./images/comand4.jpg" alt="фото 4" width="100%" class="team-image">
+                <li class="team-list__item">
+                    <picture>
+                        <source srcset="./images/comand4.jpg 1x,
+                        ./images/comand4-2x.jpg 2x"
+                        media="(min-width:1200px)">
+                        <source srcset="./images/comand4tab.jpg 1x,
+                        ./images/comand4tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source srcset="./images/comand4mob.jpg 1x,
+                        ./images/comand4mob-2x.jpg 2x"
+                        media="(min-width:320px)">
+                    <img 
+                    src="./images/comand4.jpg" 
+                    alt="фото 4" 
+                    width="100%" 
+                    class="team-image">
+                </picture>
                     <div class="team-group">
                         <h3 class="team-group__title">Михаил Ермаков</h3>
                 <p lang="en" class="team-group__text">UI Designer</p>
