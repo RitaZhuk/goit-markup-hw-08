@@ -1,0 +1,127 @@
+.site {
+    @include font(26px, 1.19, 700, 0.03em);
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #ECECEC;
+      &__logo {
+      font-family: "Raleway";
+      color: var(--accent);
+      display: block;
+    }
+    &__logo-web {
+      color: var(--accent);
+    }
+    &__logo-studio {
+      color: var(--text);
+    }
+    .conteiner {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+  }
+    
+    .navigation {
+      display: flex;
+      align-items: center;
+    .menu-list__link {
+      @include font(14px, 1.14, 500, 0.02em);
+      position: relative;
+      color: var(--text);
+      display: block;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }}
+    
+    .menu-list  {
+      display: flex;
+      align-items: center;
+      margin-left: 93px;
+    &__link--current:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      display: block;
+      background: var(--accent);
+      height: 2px;
+      border-radius: 2px;
+      bottom: -34px;
+    }}
+    
+    .navigation .menu-list__item+.menu-list__item {
+    margin-left: 50px;
+    }
+    
+    .menu-list__link:hover,
+    .menu-list__link:focus {
+      color: var(--accent);
+    }
+    
+    .menu-list__link--current {
+      color: var(--accent);
+    }
+    
+    .contacts-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    .contacts-nav .contacts-nav__item+.contacts-nav__item {
+      margin-left: 50px;
+    }
+    
+    .site-mail {
+      @include font(14px, 1.14, 500, 0.02em);
+      color: var(--main-text);
+      display: block;
+      fill: currentColor;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       .contacts-nav__item & {
+      display: flex;
+      align-items: center;
+    }
+      &:hover, &:focus {
+        color: var(--accent);
+      }
+      }
+    
+    .site-mail__icon {
+      margin-right: 10px;
+      &:hover, &:focus {
+      color: var(--accent);
+    }
+    .site-mail:hover & {
+      fill: var(--accent);
+    }
+    .site-mail:focus & {
+      fill: var(--accent);
+    }
+    }
+    
+    .site-tel {
+      @include font(14px, 1.14, 500, 0.02em);
+      color: var(--main-text);
+      display: block;
+      fill: var(--main-text);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .contacts-nav__item & {
+      display: flex;
+      align-items: center;
+    }
+      &:hover, &:focus {
+        color: var(--accent);
+    }}
+    
+    .site-tel__icon {
+      margin-right: 10px;
+      fill: var(--main-text);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .site-tel:hover & {
+      fill: var(--accent);
+    }
+    .site-tel:focus & {
+      fill: var(--accent);
+    }
+      &:hover, &:focus {
+        color: var(--accent);
+    }
+  }
