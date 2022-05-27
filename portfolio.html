@@ -22,6 +22,10 @@
     <header class="site">
         <div class="conteiner">
         <a href="" class="logo site__logo link"><span class="site__logo-web">Web</span><span class="site__logo-studio">Studio</span></a>
+        <button type="button" class="menu-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon icon-menu_40px" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-menu_40px"></use></svg>
+        </button>
         <nav class="navigation"> 
             <ul class="menu-list list"> 
             <li class="menu-list__item"><a href="./index.html" class="menu-list__link link ">Студия</a></li>
@@ -42,6 +46,39 @@
                     </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
+        <div class="mob-menu js-menu-container" id="mobile-menu" >
+            <div class="conteiner">
+                <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn js-close-menu">
+                <svg class="icon icon-close_40px" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-close_40px"></use></svg>
+            </button>
+            
+            <nav class="mob-navigation"> 
+                <ul class="mob-menu-list list"> 
+                <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link mob-menu-list__link--current link ">Студия</a></li>
+                <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a></li>
+                <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link link">Контакты</a></li>
+            </ul>
+            </nav>
+        </div>
+            <div class="socmenu">
+            <ul class="mob-contacts-nav list">
+                <li class="contacts-nav__item">
+                    <a href="tel:+380961111111" class="mob-site-tel link">+38 096 111 11 11</a></li>
+                    <li class="mob-contacts-nav__item">
+                    <a href="emailto:info@devstudio.com" class="mob-site-mail link">info@devstudio.com</a></li>
+                
+            </ul>
+            <ul class="mob-soc list">
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link">Instagram</a></li>
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link">Twitter</a></li>
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link">Facebook</a></li>
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
         </header>
     <!-- main -->
     <section class="section">
