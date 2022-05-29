@@ -19,13 +19,13 @@
   }
   .conteiner {
     @media screen and (min-width: 480px) {
-      max-width: 480px;
+      width: 480px;
     }
     @media screen and (min-width: 768px) {
-      max-width: 768px;
+      width: 768px;
     }
     @media screen and (min-width: 1200px) {
-      align-items: baseline;
+      width: 1200px;
      
     }
      display: flex;
@@ -129,6 +129,7 @@
       display: flex;  
     }
     @media screen and (min-width: 1200px) {
+      display: flex;
     align-items: center;
     margin-left: auto;
     }
@@ -292,6 +293,7 @@ color: #212121;
   }
   
   .mob-menu-list__link--current {
+    font-size: 40px;
     color: var(--accent);
   }
 
