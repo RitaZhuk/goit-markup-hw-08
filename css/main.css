@@ -1397,12 +1397,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .portfolio-list {
-    margin-bottom: 60px;
-  }
-}
-
-@media (max-width: 767px) {
   .portfolio-list__item:not(:last-child) {
     margin-bottom: 30px;
   }

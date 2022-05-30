@@ -51,11 +51,7 @@
   }
 }
 ////////////////////////////////////////////
-    .portfolio-list{
-        @media (max-width:767px) {
-            margin-bottom: 60px;
-        }
-    }
+   
     .portfolio-list__item {
     @media (max-width:767px) {
     &:not(:last-child) {
