@@ -28,13 +28,15 @@
 .adress--soc {
   @media screen and (min-width: 780px) {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: baseline;
   }   
 }
 
 .main__adress {
-  margin-bottom: 60px;
+  @media screen and (max-width: 779px) {
+    margin-bottom: 60px;
+      }
   
   @media screen and (min-width: 1200px) {
       margin-bottom: 0px;
@@ -81,10 +83,8 @@
 /* ------------------------------Присоединяйтесь-------------- */
 
 .main__soc {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 780px) and (max-width: 1199px) {
-      margin-left: 165px;
+  @media screen and (max-width: 779px) {
+margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
       margin-left: 70px;
@@ -105,6 +105,7 @@
 }
 
 .footer__list--soc {
+  
   display: flex;
   justify-content: center;
 }
@@ -112,6 +113,7 @@
 .footer__item--soc:not(:last-child) {
   margin-right: 10px;
 }
+
 
 .footer__link--soc {
   display: flex;
@@ -142,6 +144,9 @@
 /* ------------------------------Подпишитесь-------------- */
 
 .footer__form {
+  @media screen and (min-width: 780px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: center;

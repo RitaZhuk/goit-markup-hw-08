@@ -222,10 +222,14 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+  .contacts-nav {
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 1199px) {
   .contacts-nav {
     flex-direction: column;
-    align-items: center;
     display: flex;
   }
 }
@@ -237,15 +241,22 @@ body {
   }
 }
 
-.contacts-nav .contacts-nav__item + .contacts-nav__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts-nav .contacts-nav__item + .contacts-nav__item {
+    margin-left: 50px;
+  }
 }
-
 @media screen and (max-width: 767px) {
   .contacts-nav__item {
     display: none;
   }
 }
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+  .contacts-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .site-mail {
   font-size: 14px;
   line-height: 1.14;
@@ -264,12 +275,6 @@ body {
   color: var(--accent);
 }
 
-@media screen and (max-width: 1199px) {
-  .site-mail {
-    margin-right: -66px;
-    margin-bottom: 10px;
-  }
-}
 .site-mail__icon {
   margin-right: 10px;
 }
@@ -557,16 +562,18 @@ body {
   .peculiar-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
-}
-.peculiar-list__item {
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .peculiar-list__item {
     width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .peculiar-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -710,19 +717,24 @@ body {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
 .team-list__item {
-  margin-bottom: 30px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 479px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-list__item {
     flex-basis: calc(50% - 30px);
+    margin-top: 30px;
     margin-left: 30px;
   }
 }
@@ -896,13 +908,15 @@ body {
 @media screen and (min-width: 780px) {
   .adress--soc {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
 
-.main__adress {
-  margin-bottom: 60px;
+@media screen and (max-width: 779px) {
+  .main__adress {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main__adress {
@@ -945,12 +959,9 @@ body {
 }
 
 /* ------------------------------Присоединяйтесь-------------- */
-.main__soc {
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 780px) and (max-width: 1199px) {
+@media screen and (max-width: 779px) {
   .main__soc {
-    margin-left: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1002,6 +1013,11 @@ body {
 }
 
 /* ------------------------------Подпишитесь-------------- */
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+  .footer__form {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__form {
     display: flex;
@@ -1317,6 +1333,25 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media (max-width: 767px) {
+  .section .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .section .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filtr-list {
   display: flex;
   flex-wrap: wrap;
@@ -1324,19 +1359,16 @@ body {
 }
 @media (max-width: 767px) {
   .filtr-list {
-    margin-top: 60px;
     margin-bottom: 40px;
   }
 }
 @media (min-width: 768px) {
   .filtr-list {
-    margin-top: 60px;
     margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
   .filtr-list {
-    margin-top: 94px;
     margin-bottom: 34px;
   }
 }
@@ -1364,8 +1396,16 @@ body {
     margin-bottom: 0px;
   }
 }
-.portfolio-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media (max-width: 767px) {
+  .portfolio-list {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) {

@@ -1,17 +1,29 @@
+.section .portfolio {
+    @media (max-width:767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      @media (min-width:768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      @media (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+      }
+}
+
 .filtr-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   @media (max-width:767px) {
-    margin-top: 60px;
     margin-bottom: 40px;
   }
   @media (min-width:768px) {
-    margin-top: 60px;
     margin-bottom: 30px;
   }
   @media (min-width:1200px) {
-    margin-top: 94px;
     margin-bottom: 34px;
   }
 }
@@ -39,9 +51,18 @@
   }
 }
 ////////////////////////////////////////////
-    .portfolio-list__item:not(:last-child) {
+    .portfolio-list{
+        @media (max-width:767px) {
+            margin-bottom: 60px;
+        }
+    }
+    .portfolio-list__item {
+    @media (max-width:767px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
   }
+}
+}
   
   @media (min-width:768px) {
       .portfolio-list {
