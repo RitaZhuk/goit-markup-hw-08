@@ -549,7 +549,6 @@ body {
 
 .peculiar {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .peculiar {
@@ -581,6 +580,7 @@ body {
     width: 354px;
     flex-basis: calc(50% - 30px);
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -905,6 +905,11 @@ body {
   }
 }
 
+@media screen and (max-width: 779px) {
+  .adress--soc {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 780px) {
   .adress--soc {
     display: flex;
@@ -959,11 +964,6 @@ body {
 }
 
 /* ------------------------------Присоединяйтесь-------------- */
-@media screen and (max-width: 779px) {
-  .main__soc {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .main__soc {
     margin-left: 70px;
@@ -1014,10 +1014,11 @@ body {
 
 /* ------------------------------Подпишитесь-------------- */
 @media screen and (min-width: 780px) and (max-width: 1199px) {
-  .footer__form {
+  .main__signup {
     margin-top: 60px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer__form {
     display: flex;

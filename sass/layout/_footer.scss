@@ -26,6 +26,9 @@
 }
 
 .adress--soc {
+  @media screen and (max-width: 779px) {
+    margin-bottom: 60px;
+      }
   @media screen and (min-width: 780px) {
       display: flex;
       justify-content: space-around;
@@ -83,9 +86,7 @@
 /* ------------------------------Присоединяйтесь-------------- */
 
 .main__soc {
-  @media screen and (max-width: 779px) {
-margin-bottom: 60px;
-  }
+ 
   @media screen and (min-width: 1200px) {
       margin-left: 70px;
   }
@@ -143,10 +144,14 @@ margin-bottom: 60px;
 
 /* ------------------------------Подпишитесь-------------- */
 
-.footer__form {
-  @media screen and (min-width: 780px) and (max-width: 1199px) {
+.main__signup {
+ @media screen and (min-width: 780px) and (max-width: 1199px) {
     margin-top: 60px;
-  }
+  } 
+}
+
+.footer__form {
+  
   @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: center;
